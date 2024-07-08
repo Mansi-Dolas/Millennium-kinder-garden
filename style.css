@@ -1,0 +1,289 @@
+/* General styling for fade-in effect */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 5s ease-in-out forwards;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Header Styles */
+header {
+    background-color: #d9cdfb;
+    color: rgb(74, 3, 82);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+
+    text-align: left;
+    font-weight: 600;
+    font-size: 40px;
+    color: rgb(89, 4, 112);
+    text-transform: uppercase;
+    cursor: default;
+}
+
+/* Navigation Styles */
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #5f059f;
+    width: 100%;
+    line-height: 200%;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    padding: 6px 50px;
+    border-radius: 20px;
+}
+
+nav ul li a:hover {
+    background: #b7a3f4;
+    color: black;
+}
+
+/* Hide menu icons by default */
+nav .fa-solid {
+    display: none;
+}
+
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .image{
+        background-image: url('images/image.png');
+    }
+    nav {
+        
+        padding: 10px 20px; /* Reduce padding for smaller screens */
+    }
+    nav .fa-solid {
+        color: white; /* Set color of icons to white */
+        display: block; /* Show icons on mobile */
+        font-size: 25px;
+    }
+    nav ul {
+        background-color: #5f059f;
+        position: fixed;
+        top: 0;
+        right: -200px; /* Initial position off-screen */
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        flex-direction: column; /* Arrange items vertically */
+        transition: right 0.3s ease; /* Smooth transition */
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        color: white; /* Ensure close icon is also white */
+    }
+   
+}
+.image {
+    background-image: url('images/img111.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%; /* Ensures the div takes full width */
+    height: 600px; /* Sets the height of the div */
+    border-radius: 0; /* No border radius */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+.image .container {
+    height: 100%; /* Ensures the container takes full height of the parent div */
+    display: flex; /* Optional: Flexbox for centering content if needed */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+}
+
+/* About Section Styles */
+#about {
+    background-color: #dbd2f8;
+    display: flex;
+    justify-content: center;
+    text-align: left; /* Ensure text starts from the left */
+    padding: 50px 0; /* Adjust padding as needed */
+    
+}
+.about .left-content {
+    flex: 1;
+    padding-right: 20px; /* Adjust spacing between image and text */
+}
+
+.about .right-content {
+    margin-right: 5px;
+    flex: 2;
+    padding-left: 20px; /* Adjust spacing between image and text */
+}
+
+.about h2 {
+    color: #3c0464;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif; /* Apply Arial font to h2 */
+}
+
+.about h3 {
+    color: #2e034d;
+    font-size: 24px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif; /* Apply Arial font to h3 */
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif; /* Apply Arial font to paragraphs */
+    margin-bottom: 10px; /* Adjust margin bottom for spacing between paragraphs */
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Programs Section Styles */
+.programs {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.programs h2 {
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.programs p {
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* General section styling */
+.programs, .about, .bg-light {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.container, .container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.programs h2, .about h2, .bg-light h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.programs p, .about p, .bg-light p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Column styling */
+.col1, .col2 {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(131, 88, 88, 0.1);
+}
+
+.col1 h3, .col2 h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.col1 p, .col2 p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* General styling for the image section */
+#image-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#images img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+#images img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styles */
+footer {
+    background-color: darkblue;
+    color: white;
+    padding: 20px 0;
+}
