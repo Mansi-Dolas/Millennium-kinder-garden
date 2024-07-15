@@ -207,7 +207,7 @@ nav .fa-solid {
 /* General section styling */
 .programs, .about, .bg-light {
     padding: 50px 0;
-    background-color: #f9f9f9;
+    background-color: #e2daf9;
 }
 
 .container, .container1 {
@@ -228,21 +228,49 @@ nav .fa-solid {
     margin-bottom: 40px;
 }
 
-/* Row styling */
-.row {
+/* Row styling 
+.row1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-/* Column styling */
-.col1, .col2 {
+/* Column styling 
+.col1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 2;
+    margin: 5px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(131, 88, 88, 0.1);
+}/*
+.col2{
     flex: 1;
     margin: 10px;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(131, 88, 88, 0.1);
+    background-color: #f13131;
+    box-shadow: 0 4px 8px rgba(172, 49, 49, 0.1);
 }
+.col1{
+    flex: 1;
+}
+
+.c11 {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.c22 {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.c11 img {
+    max-width: 100%;
+}
+
 
 .col1 h3, .col2 h3 {
     font-size: 1.8em;
@@ -252,6 +280,50 @@ nav .fa-solid {
 .col1 p, .col2 p {
     font-size: 1.1em;
     line-height: 1.6;
+}
+*/
+.row2{
+    background-color: rgb(255, 198, 255);
+}
+.row3{
+    background-color: rgb(182, 194, 245);
+}
+
+
+
+/***************************************************/
+.row1 {
+    background-color: #d2c6f9;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col1 {
+    display: flex;
+    width: 100%;
+}
+
+.c11 {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.c22 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.c11 img {
+    max-width: 100%;
+}
+
+.p1, .p2 {
+    flex: 1;
+    padding: 10px;
 }
 
 /* General styling for the image section */
